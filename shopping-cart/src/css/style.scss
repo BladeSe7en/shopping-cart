@@ -1,0 +1,45 @@
+$font: 'Open Sans', sans-serif;
+$primary-color: #146fa5;
+$secondary-color: #ff5041;
+$background-color: #203040;
+$dark-gray: #313131;
+$off-white: #fbfbfb;
+$hover: #ff8000;
+
+ @import 'home';
+// @import 'navbar';
+// @import 'admin-login';
+// @import 'meetups';
+// @import 'talks-page';
+// @import 'admins';
+// @import 'faq';
+// @import 'rules';
+// @import 'leaderboard';
+// @import 'playerProfile';
+// @import 'forumMain';
+// @import 'forumTopic';
+// @import 'forumThread';
+// @import 'pagination';
+// @import 'newsletters';
+
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $font;
+    background-size: cover;
+    margin: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+a:hover {
+    color: $hover;
+}
+
+body, input, select, textarea {
+    font-size: 16px;
+}

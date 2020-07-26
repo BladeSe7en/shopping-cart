@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body,#root {
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: $background-color;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    button {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: $background-color;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
